@@ -42,37 +42,3 @@ class ContactList:
                 if lizt['name'] == person['name']:
                     result.append(person)
         return result
-
-# friends = [{'name':'Alice','number':'867-5309'},{'name':'Bob', 'number':'555-5555'}]
-# work_buddies = [{'name':'Alice','number':'867-5309'},{'name':'Carlos', 'number':'555-5555'}]
-
-# my_friends_list = ContactList('My Friends', friends)
-# my_work_buddies = ContactList('Work Buddies', work_buddies)
-
-# # my_friends_list.remove_contact('Alice')
-# # print(my_friends_list.contact_list)
-
-# test_contact = [{'name':'Jeff', 'number':'555-5555'}]
-# my_friends_list.add_contact(test_contact)
-# print(len(my_friends_list.contact_list))
-
-# # print(my_friends_list.find_shared_contact(work_buddies))
-# # 
-
-# # my_friends_list.set_contacts = test_contact
-# # print(my_friends_list.get_contacts)
-
-# contacts = [{'name': 'Alice', 'number': '123-4567'}]
-# my_list = ContactList('My List', contacts)
-# my_list.add_contact({'name': 'Bob', 'number': '987-6543'})
-# print(len(my_list.get_contacts) == 2)
-# print(my_list.get_contacts[0]['name'] == 'Alice')
-# print(my_list.get_contacts)
-
-friends = [{'name': 'Alice', 'number': '867-5309'}, {'name': 'Bob', 'number': '555-5555'}]
-work_buddies = [{'name': 'Alice', 'number': '867-5309'}, {'name': 'Carlos', 'number': '555-5555'}]
-my_friends_list = ContactList('My Friends', friends)
-my_work_buddies = ContactList('Work Buddies', work_buddies)
-shared_contacts = my_friends_list.find_shared_contacts(my_work_buddies)
-len(shared_contacts) == 1
-shared_contacts[0]['name'] == 'Alice'
